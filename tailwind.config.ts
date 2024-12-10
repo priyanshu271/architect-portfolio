@@ -9,11 +9,30 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        background: "var(--background)",
-        foreground: "var(--foreground)",
+        peach: {
+          light: '#FFCCB3',
+          DEFAULT: '#FFAB40',
+          dark: '#FF8A00',
+        },
+        brown: {
+          light: '#D7CCC8',
+          DEFAULT: '#BCAAA4',
+          dark: '#8D6E63',
+        },
+        cream: {
+          light: '#FFF8E1',
+          DEFAULT: '#FFE0B2',
+          dark: '#FFD54F',
+        },
+      },
+      fontSize: {
+        sm: ['0.875rem', { lineHeight: '1.25rem' }],
+        base: ['1rem', { lineHeight: '1.5rem' }],
+        lg: ['1.125rem', { lineHeight: '1.75rem' }],
       },
     },
   },
   plugins: [],
 };
+
 export default config;
